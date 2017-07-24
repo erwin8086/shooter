@@ -253,6 +253,8 @@ minetest.register_node("shooter:turret", {
 	},
 })
 
+spoil.register_inv("shooter:turret", {"main"})
+
 if SHOOTER_ENABLE_CRAFTING == true then
 	minetest.register_craft({
 		output = "shooter:turret",
